@@ -1,4 +1,4 @@
-package br.com.java.exercices;
+package br.com.java.exercises;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
@@ -10,7 +10,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.google.common.base.Joiner;
 
-import br.com.java.exercices.common.MathOperation;
+import br.com.java.exercises.common.MathOperation;
 
 public class VisualNutsExec01 {
 	

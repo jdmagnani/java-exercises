@@ -1,4 +1,4 @@
-package br.com.java.exercices.common;
+package br.com.java.exercises.common;
 
 @FunctionalInterface
 public interface MathOperation {
