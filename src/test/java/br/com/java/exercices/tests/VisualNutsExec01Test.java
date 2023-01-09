@@ -1,4 +1,4 @@
-package com.visualnuts.exercices;
+package br.com.java.exercices.tests;
 
 import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.assertTrue;
@@ -6,6 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+
+import br.com.java.exercices.VisualNutsExec01;
 
 public class VisualNutsExec01Test {
 

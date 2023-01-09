@@ -1,4 +1,4 @@
-package com.visualnuts.exercices.common;
+package br.com.java.exercices.common;
 
 @FunctionalInterface
 public interface MathOperation {
