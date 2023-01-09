@@ -1,0 +1,17 @@
+
+# ignore target folder
+target/
+
+# Eclipse m2e generated files
+# Eclipse Core
+.project
+*.prefs
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Intellij 
+*.iml
+
+# ignore all logs
+*.log
