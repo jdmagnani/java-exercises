@@ -28,7 +28,7 @@ Exercise2 - ParseJsonData:
 
 
 ```
-java -cp exercices-0.0.1-SNAPSHOT-jar-with-dependencies.jar br.com.java.exercises.ParseJsonData <optional-countries-json-file-path>
+java -cp exercices-0.0.1-SNAPSHOT-jar-with-dependencies.jar br.com.java.exercises.ParseJsonData <countries-json-file-path>
 ```
 In case of any file path passed, the class will use the default one under `src/main/resources/countries.json`.
 
