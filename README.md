@@ -19,9 +19,10 @@ Please make sure you have Java 8 or higher version and also maven installed in y
 5. run the command"
 
 For example to run exercise 1 - PrintNumbersSequence:
-``
+
+```
 java -cp exercices-0.0.1-SNAPSHOT-jar-with-dependencies.jar br.com.java.exercises.PrintNumbersSequence
-``
+```
 
 In this repo, you'll find two main Java classes:
 
