@@ -6,7 +6,7 @@ Please make sure you have Java 8 or higher version and also maven installed in y
 
 ## How to run the exercises?
 
-* Pelase follow the steps listed below:
+### Please follow the steps listed below:
 
 1. Clone the repo by running: git clone git@github.com:jdmagnani/java-exercises.git
 
