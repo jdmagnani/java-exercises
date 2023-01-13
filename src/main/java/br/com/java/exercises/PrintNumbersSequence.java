@@ -22,9 +22,9 @@ import br.com.java.exercises.common.Elements;
  *
  */
 
-public class VisualNutsExec01 {
+public class PrintNumbersSequence {
 
-	private static final Logger logger = LogManager.getLogger(VisualNutsExec01.class);
+	private static final Logger logger = LogManager.getLogger(PrintNumbersSequence.class);
 
 	public static void main(String[] args) {
 
