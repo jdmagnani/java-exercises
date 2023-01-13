@@ -16,17 +16,29 @@ Please make sure you have Java 8 or higher version and also maven installed in y
 
 4. Navigate to the target folder (where the jar's are generated)
 
-5. run the command"
+5. run the commands
 
-For example to run exercise 1 - PrintNumbersSequence:
+Exercise1 - PrintNumbersSequence:
 
 ```
 java -cp exercices-0.0.1-SNAPSHOT-jar-with-dependencies.jar br.com.java.exercises.PrintNumbersSequence
 ```
 
+Exercise2 - ParseJsonData:
+
+
+```
+java -cp exercices-0.0.1-SNAPSHOT-jar-with-dependencies.jar br.com.java.exercises.ParseJsonData <optional-countries-json-file-path>
+```
+In case of any file path passed, the class will use the default one under `src/main/resources/countries.json`.
+
+## Brief explanation about the exercise classes
+
 In this repo, you'll find two main Java classes:
 
-    *  PrintNumbersSequence: this class has the purpose to solve the following problem desribed below:
+[PrintNumbersSequence.java](https://github.com/jdmagnani/java-exercises/blob/main/src/main/java/br/com/java/exercises/PrintNumbersSequence.java)
+
+This class has the purpose to solve the following problem desribed below:
       Write or describe an algorithm that prints the whole integer numbers to the console, start from the number 1, and print all numbers going up to the number 100.
       However, when the number is divisible by 3, do not print the number, but print the word 'Visual'. 
       If the number is divisible by 5, do not print the number, but print 'Nuts'. And for all numbers divisible by both (eg: the number 15) the same, but print 'Visual Nuts'.
