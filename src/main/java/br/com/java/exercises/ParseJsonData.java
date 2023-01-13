@@ -38,9 +38,18 @@ public class ParseJsonData {
 
 		try {
 			
+			// Local tests, getting JSON file from resources folder
+			String defualtJsonFile = ParseJsonData.class
+                    .getClassLoader().getResource("countries.json").getPath();
+			
+			
 			// setting file path, in case of null, assuming default test path
-			String filePath = (args.length > 0) ? args[0] : "src/main/resources/countries.json";
+			String filePath = (args.length > 0) ? args[0] : defualtJsonFile;
 			JsonNode jsonData = parseJsonData.readJSONFile(filePath);
+			
+			if (jsonData.size() == 0) {
+				throw new NullPointerException();
+			}
 			
 			// parsing JSON object to generate report data
 			countriesReportObject = parseJsonData.generateReport(jsonData, "de");
@@ -48,11 +57,14 @@ public class ParseJsonData {
 			
 		} catch (IOException e) {
 			logger.error(e.getMessage());
+		} catch (NullPointerException nullEx) {
+			logger.error("Cannot read JSON file. Please make sure you provided a valid file path.");
 		}
 
 	}
 	
 	public JsonNode readJSONFile(String filePath) throws IOException {
+		
 		File jsonFile = new File(filePath);
 		ObjectMapper objectMapper = new ObjectMapper();
 		JsonNode jsonData = null;
@@ -62,6 +74,7 @@ public class ParseJsonData {
 		}
 		return jsonData;
 	}
+
 
 	public void printReport(CountriesReport countriesReport) {
 		System.out.println(countriesReport.toString());
